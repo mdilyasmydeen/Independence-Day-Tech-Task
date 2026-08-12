@@ -1,4 +1,4 @@
-# 🇮🇳 India Growth Dashboard – State-wise Progress Analysis
+# 🇮🇳 India Growth – State-wise Progress Analysis
 
 ## 📌 Project Overview
 
