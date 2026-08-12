@@ -1,4 +1,4 @@
-# 🇮🇳 India Growth Dashboard
+# India Growth Dashboard
 
 ## 📌 Project Overview
 
@@ -23,8 +23,6 @@ The dashboard converts raw achievement data into meaningful insights using KPI c
 ## 📊 Dashboard Preview
 
 ![India Growth Dashboard](india-growth-dashboard.png)
-
-> Create an `images` folder in your repository and upload your dashboard image with the name `india-growth-dashboard.png`.
 
 ---
 
@@ -119,88 +117,6 @@ Insight Generation
       ↓
 Project Documentation
 ```
-
----
-
-## 🧮 Sample DAX Measures
-
-### Total Achievements
-
-```DAX
-Total Achievements =
-COUNTROWS('India Achievements')
-```
-
-### Total States
-
-```DAX
-Total States =
-DISTINCTCOUNT('India Achievements'[State])
-```
-
-### Total Sectors
-
-```DAX
-Total Sectors =
-DISTINCTCOUNT('India Achievements'[Sector])
-```
-
-### Average Growth Percentage
-
-```DAX
-Average Growth % =
-AVERAGE('India Achievements'[Growth %])
-```
-
-### Total Metric Value 2025
-
-```DAX
-Total Metric 2025 =
-SUM('India Achievements'[Metric Value 2025])
-```
-
-### Total Metric Value 2026
-
-```DAX
-Total Metric 2026 =
-SUM('India Achievements'[Metric Value 2026])
-```
-
-### Growth Percentage
-
-```DAX
-Growth % =
-DIVIDE(
-    [Total Metric 2026] - [Total Metric 2025],
-    [Total Metric 2025],
-    0
-)
-```
-
-### Top-Performing State
-
-```DAX
-Top Performing State =
-VAR TopState =
-    TOPN(
-        1,
-        SUMMARIZE(
-            'India Achievements',
-            'India Achievements'[State],
-            "State Growth", [Average Growth %]
-        ),
-        [State Growth],
-        DESC
-    )
-RETURN
-    CONCATENATEX(
-        TopState,
-        'India Achievements'[State],
-        ", "
-    )
-```
-
-> Change the table and column names if they are different in your Power BI dataset.
 
 ---
 
