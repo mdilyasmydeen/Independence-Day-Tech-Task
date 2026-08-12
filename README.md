@@ -23,9 +23,6 @@ The dashboard transforms raw state and sector data into meaningful insights usin
 
 ![India Growth Dashboard](images/india-growth-dashboard.png)
 
-> Add the dashboard image to an `images` folder and name it  
-> `india-growth-dashboard.png`.
-
 ---
 
 ## 📈 Key Performance Indicators
