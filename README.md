@@ -21,7 +21,7 @@ The dashboard transforms raw state and sector data into meaningful insights usin
 
 ## 📊 Dashboard Preview
 
-![India Growth Dashboard](images/india-growth-dashboard.png)
+![India Growth Dashboard](india-growth-dashboard.png)
 
 ---
 
